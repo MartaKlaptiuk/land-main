@@ -1,0 +1,245 @@
+.opponents-found {
+  padding: 65px 40px 0 40px;
+  h3 {
+    font-family: "SofiaPro";
+  }
+  h4 {
+    margin: 40px 0;
+  }
+  p {
+    font-size: 16px;
+    b {
+      font-size: 21px;
+    }
+  }
+  .warriors,
+  .position,
+  .seconds-block {
+    p {
+      font-size: 37px;
+    }
+    span {
+      font-size: 16px;
+      font-family: "SofiaProRegular";
+      line-height: 32px;
+      color: #cceaff;
+    }
+  }
+  .you-have-block {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .seconds-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1075px;
+    div {
+      width: 185px;
+    }
+  }
+  .instruction {
+    color: #ffffff;
+    font-family: "SofiaPro";
+    padding: 76px 0 44px 0;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .white-button-lets-start {
+    width: 153px;
+    height: 52px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+.bg-opponents-found {
+  background: url(../img/Ellements2.png) center left no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  z-index: 1;
+  background-size: 100% 80%;
+}
+
+.opponents-found {
+  img {
+    &:nth-child(3) {
+      margin-top: 55%;
+    }
+    &:nth-child(6) {
+      margin-top: 47%;
+    }
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .registration-main {
+    //min-height: 974px;
+    background-size: cover;
+    background-position: 30%;
+  }
+  .bg-opponents-found {
+    background-size: 127% 60%;
+    background-position-x: center;
+  }
+  .opponents-found .seconds-block {
+    justify-content: center;
+    max-width: 778px;
+    div {
+      margin: 20px 15px;
+    }
+  }
+  .opponents-found {
+    .warriors p,
+    .position p,
+    .seconds-block p {
+      font-size: 31px;
+    }
+    .warriors span,
+    .position span,
+    .seconds-block span {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    img {
+      &:nth-child(1) {
+        top: 20%;
+      }
+      &:nth-child(2) {
+        right: 5%;
+      }
+      &:nth-child(3) {
+        margin-top: 70%;
+      }
+      &:nth-child(4) {
+        margin-top: 19%;
+      }
+      &:nth-child(6) {
+        margin-top: 66%;
+        width: 45px;
+        height: 56px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 770px) {
+  .opponents-found .warriors p,
+  .opponents-found .position p,
+  .opponents-found .seconds-block p {
+    font-size: 30px;
+  }
+  .opponents-found img:nth-child(3) {
+    margin-top: 90%;
+  }
+}
+
+@media all and (max-width: 829px) and (orientation: landscape) {
+  .opponents-found {
+    padding-top: 32px;
+    h3 {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+    .flex {
+      h4 {
+        font-size: 9px;
+        margin: 18px 0 0 0;
+      }
+      .you-have-block {
+        width: 300px;
+      }
+      .seconds-block {
+        width: 640px;
+      }
+      p,
+      .warriors p,
+      .position p,
+      .seconds-block p {
+        font-size: 12px;
+      }
+      p b {
+        font-size: 15px;
+      }
+      .warriors span,
+      .position span,
+      .seconds-block span,
+      .instruction {
+        font-size: 8px;
+        line-height: 12px;
+      }
+      .instruction {
+        line-height: 19px;
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
+      .white-button-lets-start {
+        width: 70px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 10px;
+      }
+    }
+  }
+  .bg-nobody-wins {
+    img {
+      &:nth-child(1) {
+        width: 25px;
+        height: 30px;
+        top: 38px;
+        right: 15%;
+      }
+      &:nth-child(2) {
+        width: 27px;
+        height: 38px;
+        margin-top: 28%;
+        right: 9%;
+      }
+      &:nth-child(3) {
+        width: 24px;
+        height: 34px;
+        margin-top: 1%;
+        left: 10%;
+      }
+      &:nth-child(4) {
+        width: 26px;
+        height: 26px;
+        margin-top: 36%;
+        left: 3%;
+      }
+    }
+  }
+}
+@media all and (max-width: 570px) and (orientation: landscape) {
+  .opponents-found {
+    .flex {
+      .seconds-block {
+        width: 558px;
+      }
+      h3 {
+        margin-top: 0;
+      }
+      h4 {
+        margin-top: 5px;
+      }
+    }
+    .white-button-lets-start {
+      margin-top: 16px;
+    }
+  }
+  .bg-nobody-wins {
+    img {
+      &:nth-child(2) {
+        margin-top: 42%;
+      }
+      &:nth-child(4) {
+        margin-top: 31%;
+      }
+    }
+  }
+}
