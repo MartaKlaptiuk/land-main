@@ -167,7 +167,7 @@ q {
   background-size: cover;
 } */
 
-/* .bgvideo {
+.bgvideo {
   position: fixed;
   background-size: cover;
   right: 0;
@@ -179,7 +179,7 @@ q {
   width: auto;
   height: auto;
   z-index: -9999;
-} */
+}
 #video-bg {
   position: fixed;
   top: 0;
