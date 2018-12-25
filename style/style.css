@@ -190,7 +190,8 @@ q {
   left: 0;
   overflow: hidden;
   z-index: 1;
-  background: url(../img/background.png) center center no-repeat;
+  background: url(../img/ezgif.com-video-to-gif.gif) center center no-repeat;
+  /* background: url(../img/background.png) center center no-repeat; */
   background-size: cover;
   z-index: -9999;
 }
