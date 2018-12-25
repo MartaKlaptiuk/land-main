@@ -153,14 +153,16 @@ q {
   font-weight: normal;
   font-style: normal;
 }
-.bg-fight {
-  background: url(../img/background.png) center center no-repeat;
-  position: absolute;
+/* .bg-fight {
+  background: url(../img/ezgif.com-video-to-gif.gif) center center no-repeat; */
+/* background: url(../img/background.png) center center no-repeat; */
+/* position: absolute;
   background-size: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
+  display: none;
+} */
 
 /* body {
   background: url("video.png");
@@ -344,13 +346,15 @@ body {
 }
 
 .bg {
-  background: url(../img/jpg-01.jpg) center center no-repeat;
+  /* background: url(../img/jpg-01.jpg) center center no-repeat; */
+  background: url(../img/ezgif.com-video-to-gif.gif) center center no-repeat;
   position: fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
   min-height: 785px;
   z-index: -1;
+  display: none;
 }
 
 a {
@@ -688,6 +692,16 @@ nav .border {
 }
 .token-sale-condition p {
   padding: 0 10px 0 14px;
+}
+
+@media all and (max-width: 1200px) {
+  #video-bg {
+    display: none;
+  }
+
+  .bg {
+    display: block;
+  }
 }
 
 @media all and (max-width: 898px) {
