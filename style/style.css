@@ -153,14 +153,14 @@ q {
   font-weight: normal;
   font-style: normal;
 }
-.bg-fight {
+/* .bg-fight {
   background: url(../img/background.png) center center no-repeat;
   position: absolute;
   background-size: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
+} */
 
 /* body {
   background: url("video.png");
@@ -351,6 +351,7 @@ body {
   height: 100%;
   min-height: 785px;
   z-index: -1;
+  display: none;
 }
 
 a {
@@ -360,7 +361,7 @@ a {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 3% 0 0 0;
+  /* padding: 3% 0 0 0; */
 }
 
 .main {
@@ -383,14 +384,20 @@ a {
 
 .logo {
   margin-bottom: 3%;
+  background: url("../img/GeneralsCW.png") center center no-repeat;
+  display: block;
+  background-size: contain;
+  width: 115px;
+  height: 150px;
+  margin: 0 auto;
 }
 .logo a {
-  background: url("../img/Logo.png") center center no-repeat;
+  /* background: url("../img/GeneralsCW.png") center center no-repeat;
   display: block;
   width: 107px;
   height: 137px;
   margin: 0 auto;
-  transition: all 0.3s;
+  transition: all 0.3s; */
 }
 
 .slogan {
@@ -491,6 +498,15 @@ nav .border {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.margin-bottom {
+  margin-bottom: -45px;
+}
+
+.margin-top {
+  margin-top: -45px;
+}
+
 .documents .block:last-child {
   padding-top: 0;
 }
@@ -538,6 +554,11 @@ nav .border {
 .documents .whitepaper {
   width: 43px;
   height: 27px;
+}
+
+.documents a img {
+  width: 23px;
+  height: 22px;
 }
 .documents .bounty {
   background: url("../img/Icon_coin_blue.png") center center no-repeat;
@@ -803,6 +824,22 @@ nav .border {
   .partners .wrapper {
     width: 500px;
     margin: 0 auto;
+  }
+
+  #video-bg {
+    display: none;
+  }
+
+  .bg {
+    display: block;
+  }
+
+  .margin-bottom {
+    margin-bottom: 0;
+  }
+
+  .margin-top {
+    margin-top: 0;
   }
 }
 @media all and (max-width: 550px) {
