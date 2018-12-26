@@ -581,6 +581,13 @@ nav .border {
   margin: 0 auto;
   /* padding: 30px 0; */
 }
+
+.token-sale-condition .block.flex img {
+  width: 24px;
+  height: 27px;
+  margin-right: 10px;
+}
+
 .token-sale-condition h2 {
   color: #0093ff;
   font-family: "SofiaProSemiBold";
@@ -912,6 +919,7 @@ nav .border {
 
   .partners {
     width: 310px;
+    margin: 0 auto;
   }
   .partners .wrapper {
     width: 240px;
