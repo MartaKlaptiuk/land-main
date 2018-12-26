@@ -932,8 +932,9 @@ nav .border {
   }
 
   .token-sale-condition {
-    width: 280px;
-    height: 124px;
+    width: 261px;
+    height: 45px;
+    margin: 5% auto 30px;
   }
   .token-sale-condition h2 {
     font-size: 16px;
@@ -941,9 +942,9 @@ nav .border {
   .token-sale-condition p {
     font-size: 11px;
   }
-  .token-sale-condition .wrapper {
+  /* .token-sale-condition .wrapper {
     padding: 15px 0;
-  }
+  } */
   .token-sale-condition .block:nth-child(2) {
     padding: 20px 0;
   }
