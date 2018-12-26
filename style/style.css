@@ -153,19 +153,6 @@ q {
   font-weight: normal;
   font-style: normal;
 }
-/* .bg-fight {
-  background: url(../img/background.png) center center no-repeat;
-  position: absolute;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
-
-/* body {
-  background: url("video.png");
-  background-size: cover;
-} */
 
 .bgvideo {
   position: fixed;
@@ -213,125 +200,6 @@ q {
   }
 }
 
-.main-fight {
-  padding: 0;
-}
-
-.bets-header {
-  padding: 5% 0 4% 0;
-  text-align: center;
-}
-.bets-header .left-gamer p {
-  opacity: 0.8;
-  color: #0875e6;
-  font-family: "SofiaProSemiBold";
-  font-size: 16px;
-  line-height: 22px;
-}
-.bets-header h1 {
-  color: #0875e6;
-  font-family: "SofiaProSemiBold";
-  font-size: 46px;
-  padding: 0 90px;
-}
-
-.column-block {
-  flex-direction: column;
-  height: 900px;
-}
-.column-block .stage {
-  width: 338px;
-  height: 230px;
-  border-radius: 18px;
-  background: rgba(133, 133, 133, 0.6);
-  margin-bottom: 11px;
-}
-.column-block .stage .wrapper {
-  padding: 23px;
-  color: #ffffff;
-}
-.column-block .stage .wrapper .header {
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.column-block .stage .wrapper .header h3 {
-  font-family: "SofiaProSemiBold";
-  font-size: 24px;
-  height: 35px;
-}
-.column-block .stage .wrapper .header p {
-  font-family: "SofiaProRegular";
-  font-size: 16px;
-  line-height: 22px;
-}
-.column-block .stage .position-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  justify-content: space-between;
-  padding-right: 34px;
-}
-.column-block .stage .position-row div {
-  width: 67px;
-}
-.column-block .stage .position-row p {
-  height: 37px;
-  line-height: 37px;
-}
-.column-block .stage .position-row input {
-  width: 51px;
-  height: 37px;
-  padding-left: 12px;
-  color: #6f6f6f;
-  border: none;
-  justify-content: space-between;
-}
-.column-block .stage .position-row .game-timer {
-  justify-content: space-between;
-}
-.column-block .active-stage {
-  background-color: rgba(22, 139, 238, 0.6);
-}
-
-.hint-window-fight {
-  background-color: rgba(22, 151, 247, 0.54);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
-
-.close-hint {
-  position: absolute;
-  right: 55px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
-  opacity: 0.9;
-}
-
-.close-hint:before,
-.close-hint:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 33px;
-  width: 3px;
-  background-color: #ffffff;
-}
-
-.close-hint:before {
-  transform: rotate(45deg);
-}
-
-.close-hint:after {
-  transform: rotate(-45deg);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -361,11 +229,10 @@ a {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  /* padding: 3% 0 0 0; */
 }
 
 .main {
-  padding: 5% 0 3% 0;
+  padding: 4% 0 3% 0;
 }
 
 .main-token-sale {
@@ -384,20 +251,12 @@ a {
 
 .logo {
   margin-bottom: 3%;
-  background: url("../img/GeneralsCW.png") center center no-repeat;
+  background: url("../img/logo2.png") center center no-repeat;
   display: block;
   background-size: contain;
   width: 115px;
   height: 150px;
   margin: 0 auto;
-}
-.logo a {
-  /* background: url("../img/GeneralsCW.png") center center no-repeat;
-  display: block;
-  width: 107px;
-  height: 137px;
-  margin: 0 auto;
-  transition: all 0.3s; */
 }
 
 .slogan {
@@ -405,7 +264,7 @@ a {
   background-size: contain;
   width: 933px;
   min-height: 150px;
-  margin-bottom: 3%;
+  margin: 3% auto;
 }
 .slogan h1 {
   font-family: "SofiaProSemiBold";
@@ -491,42 +350,71 @@ nav .border {
 
 .documents {
   background: url("../img/documents.png") center center no-repeat;
-  background-size: contain;
-  margin-top: 30px;
-}
-.documents .flex {
-  flex-wrap: wrap;
-  justify-content: space-around;
+  min-height: 195px;
+  background-size: 85% 100%;
+  margin: 30px 0;
+  display: flex;
 }
 
-.margin-bottom {
-  margin-bottom: -45px;
-}
-
-.margin-top {
-  margin-top: -45px;
-}
-
-.documents .block:last-child {
-  padding-top: 0;
-}
-.documents .wrapper {
-  width: 876px;
-  height: 195px;
+.wrapper-flex {
+  width: 700px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.documents .wrapper p {
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block img {
+  width: 44px;
+  height: 37px;
+}
+
+.first-row .block:nth-child(1) img {
+  width: 43px;
+  height: 27px;
+}
+
+.first-row .block:nth-child(2) img {
+  width: 28px;
+  height: 34px;
+}
+
+.block a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 330px; */
+}
+.first-row .block img.download-icon,
+.block img.download-icon {
+  width: 23px;
+  height: 22px;
+}
+
+.documents .wrapper-flex p {
   font-family: "SofiaProSemiBold";
   font-size: 21px;
   padding: 0 17px 0 10px;
 }
-.documents .wrapper a {
+.documents .wrapper-flex a {
   color: #000000;
   position: relative;
-  margin-top: 3px;
+  /* margin-top: 3px; */
   padding-bottom: 5px;
 }
-.documents .wrapper a::before {
+.documents .wrapper-flex a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -537,45 +425,24 @@ nav .border {
   transition: all 0.4s;
   transform: scaleX(0);
 }
-.documents .wrapper a:hover::before {
+.documents .wrapper-flex a:hover::before {
   transform: scaleX(1);
 }
-.documents .wrapper a p {
+.documents .wrapper-flex a p {
   font-family: "SofiaProSemiBold";
-  font-size: 21px;
-  padding: 0 17px 0 10px;
-  display: inline-block;
-}
-.documents .wrapper img {
-  margin-left: 12px;
-}
-.documents .bounty,
-.documents .one-paper,
-.documents .whitepaper {
-  width: 43px;
-  height: 27px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
-.documents a img {
-  width: 23px;
-  height: 22px;
-}
-.documents .bounty {
-  background: url("../img/Icon_coin_blue.png") center center no-repeat;
-  background-size: contain;
-}
-.documents .one-paper {
-  background: url("../img/icon_Paper_blue.png") center center no-repeat;
-  background-size: contain;
-}
-.documents .whitepaper {
-  background: url("../img/Icon_document-blue.png") center center no-repeat;
-  background-size: contain;
+.documents .wrapper-flex a b {
+  font-family: "SofiaProSemiBold";
+  font-size: 21px;
+  display: inline-block;
 }
 
 .social {
   margin-bottom: 5%;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .social .flex {
   margin: 0 auto;
@@ -590,6 +457,9 @@ nav .border {
   border: 2px solid #0495fe;
   text-align: center;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social .icons:hover {
   background: #0495fe;
@@ -641,7 +511,7 @@ nav .border {
   width: 849px;
   position: relative;
   background-size: contain;
-  margin: 30px auto;
+  /* margin: 30px auto; */
 }
 .partners .wrapper {
   justify-content: space-between;
@@ -715,7 +585,7 @@ nav .border {
   .slogan {
     width: 718px;
     min-height: 102px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .slogan h1 {
     font-size: 51px;
@@ -744,21 +614,27 @@ nav .border {
     font-size: 14px;
   }
 
-  .documents .wrapper {
-    width: 657px;
-    height: 147px;
-    padding-top: 10px;
-    margin: 0 auto;
+  .documents {
+    background-size: 100% 90%;
   }
-  .documents .wrapper a p {
+  .wrapper-flex {
+    width: 580px;
+  }
+
+  .block a {
+    width: 245px;
+  }
+
+  .documents .wrapper-flex a p {
+    font-size: 14px;
+  }
+
+  .documents .wrapper-flex a p b {
     font-size: 16px;
-  }
-  .documents .block {
-    padding: 0;
   }
 
   .social {
-    margin-top: 120px;
+    /* margin-top: 120px; */
   }
 
   .footer {
@@ -793,20 +669,40 @@ nav .border {
   }
 
   .documents {
-    width: 100%;
+    background-size: 100% 77%;
   }
-  .documents .wrapper {
-    width: 100%;
+
+  .documents .wrapper-flex p {
+    padding: 0 5px 0 5px;
   }
-  .documents .wrapper p,
-  .documents .wrapper a {
-    font-size: 14px;
+
+  .wrapper-flex {
+    width: 525px;
   }
-  .documents .wrapper a {
-    margin-top: 0px;
+
+  .block img {
+    width: 34px;
+    height: 28px;
   }
-  .documents .wrapper a p {
-    padding: 0 8px 0 6px;
+
+  .block a {
+    width: 220px;
+  }
+
+  .first-row .block:nth-child(1) img {
+    width: 33px;
+    height: 21px;
+  }
+
+  .first-row .block:nth-child(2) img {
+    width: 23px;
+    height: 27px;
+  }
+
+  .first-row .block img.download-icon,
+  .block img.download-icon {
+    width: 18px;
+    height: 17px;
   }
 
   .footer {
@@ -844,7 +740,7 @@ nav .border {
 }
 @media all and (max-width: 550px) {
   .container {
-    padding: 10% 0;
+    padding: 5% 0;
   }
 
   .logo a {
@@ -917,34 +813,39 @@ nav .border {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto 0;
+    margin: 0 auto 0;
   }
-  .documents .wrapper {
+  .documents .wrapper-flex {
     width: 657px;
     height: 105px;
     padding-top: 0;
     margin: 0 auto;
   }
-  .documents .wrapper a {
+  .documents .wrapper-flex a p {
     font-size: 10px;
   }
-  .documents .wrapper a p {
-    font-size: 12px;
+  .documents .wrapper-flex a p b {
+    font-size: 14px;
   }
-  .documents .wrapper .bounty,
-  .documents .wrapper .one-paper,
-  .documents .wrapper .whitepaper {
-    width: 26px;
-    height: 17px;
-  }
-  .documents .wrapper img {
-    width: 14px;
-    height: 13px;
+  .first-row {
+    flex-direction: column;
   }
 
-  .social {
-    margin-top: 33px;
+  .first-row .block:first-child {
+    margin-left: -25px;
   }
+  .documents .first-row .block:first-child p {
+    padding: 0 12px;
+  }
+
+  .documents .block {
+    margin: 15px 0;
+  }
+
+  .first-row {
+    margin-bottom: 0;
+  }
+
   .social .flex {
     width: 125px;
   }
@@ -953,7 +854,6 @@ nav .border {
     height: 31px;
   }
   .social .icons i {
-    line-height: 31px;
     color: #0495fe;
     font-size: 16px;
   }
@@ -1029,6 +929,16 @@ nav .border {
 @media all and (max-width: 1366px) and (orientation: landscape) {
   .bg {
     min-height: 1220px;
+  }
+}
+
+@media only screen and (max-width: 812px) and (max-height: 375px) {
+  #video-bg {
+    display: none;
+  }
+
+  .bg {
+    display: block;
   }
 }
 
