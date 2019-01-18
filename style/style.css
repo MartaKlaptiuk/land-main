@@ -973,6 +973,7 @@ nav .border {
   .token-sale-condition {
     width: 689px;
     height: 99px;
+    overflow: hidden;
   }
 
   .token-sale-condition .flex p {
