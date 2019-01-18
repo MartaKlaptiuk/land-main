@@ -842,7 +842,7 @@ nav .border {
 @media all and (max-width: 1090px) {
   .container {
     width: 100%;
-    padding-top: 0;
+    padding-top: 40px;
     margin-bottom: 20px;
   }
 
@@ -1053,6 +1053,10 @@ nav .border {
     left: 0;
     margin-right: 0;
     transform: translate(0, 0);
+  }
+
+  .container {
+    padding-top: 0;
   }
 
   .wrapper-slogan {
