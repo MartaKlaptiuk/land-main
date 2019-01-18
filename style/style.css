@@ -1177,9 +1177,11 @@ nav .border {
   }
 
   .documents .wrapper-flex a {
-    padding-top: 5px;
+    padding-top: 0;
     padding-bottom: 0;
     margin: 0 auto;
+    transform: skew(30deg);
+    line-height: 44px;
   }
 
   .documents .wrapper-flex a p {
@@ -1229,10 +1231,6 @@ nav .border {
 
   .documents .wrapper-flex .second-block-mobile a {
     transform: skew(-30deg);
-  }
-
-  .documents .wrapper-flex a {
-    transform: skew(30deg);
   }
 
   .wrapper-footer {
